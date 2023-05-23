@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br">     
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,32 +11,29 @@
 
     <h1>Calculadora de Juros simples e Juros composto</h1>
 
-    <form action="">
-        <div>
-            <div>
-                <input type="radio" id="qual">
-                <label for="qual">Juros Simples</label>
-            </div>
-    
-            <div>
-                <input type="radio" id="qual">
-                <label for="qual">Juros Composto</label>
-            </div>
-        </div>
+    <form action="" id="form">
 
         <label for="money">Valor inicial (Capital):</label>
-        <input type="number" id="money" placeholder="Digite o valor">
+        <input type="number" id="money" placeholder="Digite o valor" step=".01">
 
         <label for="taxa">Taxa de juros %:</label>
-        <input type="number" id="taxa" placeholder="Digite a taxa aplicada">
+        <input type="number" id="taxa" placeholder="Digite a taxa aplicada" step=".01">
 
         <label for="tempo">Tempo em meses:</label>
-        <input type="number" id="tempo" placeholder="Digite a quantidade de meses">
+        <input type="number" id="tempo" placeholder="Digite a quantidade de meses" step=".01">
 
-        <button>Calcular</button>
+        <div id="escolha">
+            <input type="radio" name="juro" checked="true" id="simples">
+            <label for="simples">Juros Simples</label>
+
+            <input type="radio" name="juro" id="composto">
+            <label for="composto">Juros Composto</label> 
+        </div>
+
+        <button id="btn">Calcular</button>
 
     </form>
 
-    <script src="/script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
