@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Calculadora juros</title>
+</head>
+<body>
+
+    <h1>Calculadora de Juros simples e Juros composto</h1>
+
+    <form action="">
+        <div>
+            <div>
+                <input type="radio" id="qual">
+                <label for="qual">Juros Simples</label>
+            </div>
+    
+            <div>
+                <input type="radio" id="qual">
+                <label for="qual">Juros Composto</label>
+            </div>
+        </div>
+
+        <label for="money">Valor inicial (Capital):</label>
+        <input type="number" id="money" placeholder="Digite o valor">
+
+        <label for="taxa">Taxa de juros %:</label>
+        <input type="number" id="taxa" placeholder="Digite a taxa aplicada">
+
+        <label for="tempo">Tempo em meses:</label>
+        <input type="number" id="tempo" placeholder="Digite a quantidade de meses">
+
+        <button>Calcular</button>
+
+    </form>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>
